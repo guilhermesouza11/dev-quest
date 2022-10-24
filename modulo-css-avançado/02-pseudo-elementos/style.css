@@ -1,0 +1,30 @@
+/* seletor::pseudo-elemento{
+  propriedade: valor;
+} */
+
+/* você pode definir uma tag, classes, id e outros */
+.first-letter::first-letter{
+  background-color: darkorange;
+}
+
+/* mudando valores da primeira linha com pseudo elemento */
+.first-line::first-line{
+  background-color: darksalmon;
+}
+
+/* Serve para editar marcadores de lista */
+li::marker{
+  color: deeppink;
+  font-size: 23px;
+}
+
+/* definir conteúdos antes do elemento  */
+.before::before{
+  content: url(logo.png);
+}
+
+/* definir conteúdos depois do elemento */
+.after::after{
+  content: url(logo2.png);
+}
+

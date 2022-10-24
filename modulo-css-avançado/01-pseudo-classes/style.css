@@ -1,0 +1,28 @@
+/* p:first-child{
+  background-color: aquamarine;
+}
+
+p:last-child{
+  background-color: darkgoldenrod;
+}
+
+p:not(.padrao){
+  background-color: darkseagreen;
+} */
+
+/* Serve para selecionar elementos apartir da posição deles em um grupo de elementos irmãos */
+/* odd - são todos os elementos que estão em posições impares */
+/* even - são todos os elementos que estão em posições de pares */
+/* 3n - pega os itens de 3 em 3 da lista */
+/* nth-child(n+1):nth-child(-n+3) - Definição de um range, vai aplicar o valor no elemento do primeiro, até o terceiro */
+li:nth-child(odd){
+  background-color: cadetblue;
+}
+
+li:nth-last-child(1){
+  background-color: chartreuse;
+}
+
+p:only-child{
+  background-color: darkkhaki;
+}

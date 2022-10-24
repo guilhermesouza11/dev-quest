@@ -1,0 +1,36 @@
+p{
+  /* Definição geral da margem de um elemento */
+  margin: 30px;
+
+  /* Definindo valores diferentes para elemento em uma unica informação */
+  margin: 30px 15px 19px 4px;
+
+  /* Definindo cada uma das arestas de um elemento de forma separada */
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-bottom: 19px;
+  margin-right: 4px;
+
+  /* Observação: O Padding funciona da mesma forma que o Margin ao declarar valores a um elemento. */
+  padding: 30px;
+}
+
+h1{
+  
+  /* Defindo estilo, tamanho e cor da borda */
+  border-style: solid;
+  border-width: 20px;
+  border-color: red;
+
+  /* Defindo estilo, tamanho e cor da borda apenas em uma linha */
+  border: solid 1px black;
+
+  /* Definindo valores de cores em acada uma das arestas da borda */
+  border-top-color: red;
+  border-left-color: green;
+  border-bottom-color: blue;
+  border-right-color: orange;
+  
+  /* Definindo valores de cores em acada uma das arestas da borda apenas em uma linha */
+  border-color: brown burlywood cornflowerblue chartreuse;
+}

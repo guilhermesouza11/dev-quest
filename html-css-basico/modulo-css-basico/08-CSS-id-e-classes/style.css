@@ -1,0 +1,14 @@
+#descricao-videogame,
+#descricao-pc {
+  background-color: brown;
+  color: #ffffff;
+}
+
+.descricao-produto {
+  background-color: brown;
+  color: #ffffff;
+}
+
+.promocao {
+  border: solid 5px greenyellow;
+}

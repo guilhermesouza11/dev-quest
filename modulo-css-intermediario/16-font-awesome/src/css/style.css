@@ -1,0 +1,9 @@
+.fa-facebook {
+    color: orange;
+    font-size: 100px;
+}
+
+.fa-facebook:hover{
+    color: orchid;
+    transition: 0.5s;
+}

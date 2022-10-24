@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Coffe Break';
+    src: url('./fonts/Coffe Break.otf');
+}
+
+h1, p{
+    font-family: 'Coffe Break', Courier, monospace;
+    font-weight: 700;
+}
+

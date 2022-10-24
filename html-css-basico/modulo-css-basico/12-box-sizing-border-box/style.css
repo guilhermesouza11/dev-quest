@@ -1,0 +1,16 @@
+div{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid goldenrod;
+}
+
+.com-border-box{
+    background-color: cornflowerblue;
+    box-sizing: border-box;
+}
+
+.sem-border-box{
+    background-color: deeppink;
+}
+

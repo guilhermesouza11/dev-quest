@@ -1,0 +1,16 @@
+/* Esse aqui é um elemento com display block, em que se aplica a largura e altura */
+span {
+  color: brown;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: darkgoldenrod;
+}
+
+/* Esse aqui é um elemento sem o display block, a altura e largura não se aplicam */
+a {
+  color: aquamarine;
+  background-color: darkolivegreen;
+  width: 200px;
+  height: 200px;
+}

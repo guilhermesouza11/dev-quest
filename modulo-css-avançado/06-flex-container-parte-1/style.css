@@ -1,0 +1,39 @@
+.container.direction{
+    display: flex;
+    flex-direction: row;
+}
+
+.direction div{
+    background-color: darkolivegreen;
+    color: antiquewhite;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.container.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.wrap div{
+    background-color: darkgoldenrod;
+    color:  black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.container.flow{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flow div{
+    background-color: darkmagenta;
+    color:  yellow;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
