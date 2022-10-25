@@ -20,6 +20,8 @@
     align-self: auto;
 } */
 
+/* Align-self, proporciona atributos e valores aos elementos para definidir a posição de um item dentro de um
+container, são eles o auto, flex-start, flex-end, center e o stretch */
 .align-self.start .item3{
     align-self: flex-start;
 }
