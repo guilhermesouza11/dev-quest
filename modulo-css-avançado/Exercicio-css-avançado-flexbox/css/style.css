@@ -1,7 +1,6 @@
-*{
-  padding: 0;
-  margin: 0;
-  list-style: none;
+:root{
+  --background-color: hsl(185, 75%, 39%);
+  --text-color: hsl(227, 10%, 46%);
 }
 
 section{
@@ -9,7 +8,7 @@ section{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #19A2AE;
+  background-color: var(--background-color);
 }
 
 .container{
@@ -26,6 +25,10 @@ img{
   border-radius: 5rem;
 }
 
+span{
+    color: var(--text-color);
+}
+
 .informacoes{
     display: flex;
     justify-content: space-between;
@@ -35,12 +38,8 @@ img{
     height: 200px;
 }
 
-.informacoes span{
-    color: gray;
-}
-
 .informacoes p{
-    color: gray;
+    color: var(--text-color);
 }
 
 .status{
@@ -54,5 +53,4 @@ img{
 
 .status span{
     display: flex;
-    color: gray;
 }
