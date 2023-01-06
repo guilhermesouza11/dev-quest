@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-:root{
-  --background-color: hsl(185, 75%, 39%);
-  --text-color: hsl(227, 10%, 46%);
-}
-
-section{
+main{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,4 +62,15 @@ img{
 
 .status p > span{
   color: #000;
+}
+
+@media (max-width: 375px){
+  .status{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .status > p{
+    padding: 15px 0px;
+  }
 }
