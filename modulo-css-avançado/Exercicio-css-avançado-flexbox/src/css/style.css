@@ -55,14 +55,21 @@ main{
     text-align: center;
 }
 
-.card .profile-numbers .info .counter .card .profile-informations p{
+p{
   font-weight: 700;
 }
 
-.card .profile-informations .profile-numbers .info .age .city .counter-type{
+.age{
   color: var(--text-color);
 }
 
+.city{
+  color: var(--text-color);
+}
+
+.counter-type{
+  color: var(--text-color);
+}
 /* Aqui seria o card um pouco mais responsivo, caso haja necessidade, basta apenas descomentar esse codigo */
 /* @media (max-width: 375px){
   .status{
