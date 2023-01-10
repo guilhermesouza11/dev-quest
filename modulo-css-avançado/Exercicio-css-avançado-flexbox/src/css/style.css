@@ -1,70 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+body{
+  background-color: var(--background-color);
+  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+hr{
+  width: 100%;
+}
+
 main{
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: var(--background-color);
-  font-family: 'Kumbh Sans', sans-serif;
+  justify-content: center;
+  height: 100%;
 }
 
-.container{
-  text-align: center;
-  width: 300px;
-  height: auto;
-  border-radius: 2%;
-  background-color: white;
-  justify-content: space-around;
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  width: 330px;
+  height: 350px;
 }
 
-img{
-  width: 120px;
-  border-radius: 5rem;
-}
-
-.informacoes{
+.card .profile-informations{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;  
-    padding: 30px;
-    height: 200px;
-}
-
-.informacoes span{
-  color: var(--text-color);
-}
-
-.informacoes p{
-  color: var(--text-color);
-}
-
-.status{
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 30px 0;
-    border-top: 1px solid rgb(170, 170, 170);
+    gap: 10px;
+    height: 100%;
 }
 
-.status span{
+.card .profile-informations img{
+  border-radius: 5rem;
+  width: 120px;
+  margin-top: 20px;
+}
+
+.card .profile-numbers{
     display: flex;
-    justify-content: center;
-    font-weight: 700;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
-.status p{
+.card .profile-numbers .info .counter .card .profile-informations p{
+  font-weight: 700;
+}
+
+.card .profile-informations .profile-numbers .info .age .city .counter-type{
   color: var(--text-color);
 }
 
-.status p > span{
-  color: #000;
-}
-
-@media (max-width: 375px){
+/* Aqui seria o card um pouco mais responsivo, caso haja necessidade, basta apenas descomentar esse codigo */
+/* @media (max-width: 375px){
   .status{
     display: flex;
     flex-direction: column;
@@ -73,4 +73,4 @@ img{
   .status > p{
     padding: 15px 0px;
   }
-}
+} */
