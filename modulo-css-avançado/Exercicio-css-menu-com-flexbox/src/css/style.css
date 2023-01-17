@@ -1,3 +1,7 @@
+body{
+  font-family: 'Public Sans', sans-serif;
+}
+
 .nav-bar{
   display: flex;
   justify-content: space-between;
@@ -9,21 +13,34 @@
   display: flex;
   align-items: center;
   width: 50%;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 ul{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  width: 50%;
-}
-
-li{
-  margin-left: 15px;
-  padding: 15px;
+  width: 100%;
 }
 
 a{
   color: black;
   text-decoration: none;
+  /* margin-left: 15px; */
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  word-break: keep-all;
+}
+
+a:hover{
+  background-color: #5BC241;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.btn-register{
+  background-color: var(--buttom-color);
+  color: var(--text-white);
 }
