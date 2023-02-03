@@ -4,6 +4,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 15px 30px;
     height: 100vh;
 }
 
@@ -16,30 +17,25 @@ div{
     color: var(--text-color);
 
     font-family: 'Public Sans', sans-serif;
+
+    width: var(--patter-w);
+    height: var(--patter-h);
 }
 
 .rome{
     background-image: url(./../image/rome.png);
-    width: var(--patter-w);
-    height: var(--patter-h);
 }
 
 .boat{
     background-image: url(./../image/boat.png);
-    width: var(--patter-w);
-    height: var(--patter-h);
 }
 
 .sandAndSea{
     background-image: url(./../image/sand-and-sea.png);
-    width: var(--patter-w);
-    height: var(--patter-h);
 }
 
 .starryNight{
     background-image: url(./../image/starry-night.png);
-    width: var(--patter-w);
-    height: var(--patter-h);
 }
 
 h1{
@@ -50,10 +46,15 @@ h3{
     font-weight: var(--font-300);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1027px) {
     main{
         display: flex;
         flex-direction: column;
         height: auto;
+    }
+
+    div{
+        width: 100%;
+        background-size: cover;
     }
 }
