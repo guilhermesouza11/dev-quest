@@ -12,6 +12,7 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 45px 30px;
     margin: 15px;
     color: var(--text-color);
