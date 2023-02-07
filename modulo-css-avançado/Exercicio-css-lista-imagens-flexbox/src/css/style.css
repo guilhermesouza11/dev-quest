@@ -1,4 +1,49 @@
+html{
+    font-family: 'public sans', sans-serif;
+}
 
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pinturas{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pintura{
+    width: 335px;
+    height: 431px;
+    position: relative;
+}
+
+.pintura img{
+    width: 100%;
+}
+
+.informacoes{
+    position: absolute;
+    color: var(--text-color);
+    bottom: 40px;
+    left: 20px;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+h3{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/* 
 
 main{
     display: flex;
@@ -12,6 +57,7 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 45px 30px;
     margin: 15px;
     color: var(--text-color);
@@ -57,4 +103,4 @@ h3{
         width: 100%;
         background-size: cover;
     }
-}
+} */
