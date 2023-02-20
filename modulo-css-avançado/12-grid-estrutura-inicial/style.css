@@ -5,8 +5,27 @@
     font-size: 20px;
 }
 
+
 .container{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 100px 250px;
+    /* grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 100px); */
+
+    /* Em grid-template o primeiro valor é definido o tamanho da linha e o segundo é o tamanho da coluna */
+    /* Também é possivel usar o repeat, para repetir os valores entre linhas e colunas */
+    grid-template: repeat(1, 150px) / repeat(2, auto);
+
+    /* O grid-gap é o espaçamento entre as linhas e colunas
+    OBSERVAÇÃO: Uma observação importante é que você também pode definir os valores de espaçamento de forma
+    abreviada, sendo o primeiro valor o espaçamento entre linhas e o segundo entre as colunas */
+    grid-gap: 1px 2px;
+
+    /* Já o grid-column-gap, é outra propriedade que define espaçamentos apenas entre as colunas */
+    grid-column-gap: 10px;
+
+    /* Como na propriedade de cima, porém, é definido o espaçamento apenas para as linhas/rows */
+    grid-row-gap: 20px;
+
+    /*  */
+
 }

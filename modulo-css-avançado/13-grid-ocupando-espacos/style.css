@@ -1,0 +1,66 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 15px;
+}
+
+.verde-claro{
+  background-color: var(--verde-claro);
+
+  /* Definindo o valor de onde essa div começa e de onde ela termina.
+  OBSERVAÇÃO: Temos que lembrar que para que a div ocupe duas colunas, ela precisa terminar na terceira, por isso
+  o valor de grid-column-end é 3.
+  */
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; */
+
+  /* Definindo ocupações das divs, de forma simplificada. */
+  /* grid-column: 1 / 3; */
+
+  /* A mesma função das colunas, porém para as linhas */
+  /* grid-row-start: 1; */
+  /* grid-row-end: 3; */
+
+  /* Definindo ocupações das divs em linhas, de forma simplificada */
+  /* grid-row: 1 / 3 */
+
+  /* O grid area é a mesma coisa de todos os outros de cima, porém de uma forma bem mais reduzida, funciona na seguinte
+  ordem:
+    grid-row-start;
+    grid-column-start;
+    grid-row-end;
+    grid-column-end.
+  */
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.azul{
+  background-color: var(--azul);
+
+  grid-area: 1 / 3 / 1 / 6;
+}
+
+.rosa{
+  background-color: var(--rosa);
+
+  grid-area: 3 / 1 / 3 / 3;
+}
+
+.laranja-escuro{
+  background-color: var(--laranja-escuro);
+
+  grid-area: 2 / 3 / 4 / 5;
+}
+
+.verde-forte{
+  background-color: var(--verde-forte);
+
+  grid-area: 2 / 5 / 3 / 5;
+}
+
+.marrom{
+  background-color: var(--marrom);
+
+  grid-area: 3 / 5 / 3 / 5;
+}

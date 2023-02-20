@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: grid;
+
+  /* Com o grid-template-areas, será definido o nome para cada area especifica para criar um layout */
+  /* Aqui o layout a ordem do layout pé definida como se estivesse pensando em um desenho mesmo */
+  
+  /* grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
+    "menu secao-principal aside"
+    "rodape rodape rodape"; */
+
+  /* Forma reduzida, simplificada, de como definir o desenho do layout e como definir os tamanhos também das linhas de das colunas */
+  grid:
+    "cabecalho cabecalho cabecalho" 100px
+    "menu secao-principal aside" 426px
+    "rodape rodape rodape" 100px / 200px auto 100px;
+}
+
+.cabecalho{
+  background-color: var(--verde-claro);
+
+  /* O grid-area, serve para nomear cada area, cada pedaço de elementos HTML */
+  grid-area: cabecalho;
+}
+
+.menu{
+  background-color: var(--azul);
+
+  grid-area: menu;
+}
+
+.secao-principal{
+  background-color: var(--rosa);
+
+  grid-area: secao-principal;
+}
+
+.aside{
+  background-color: var(--laranja-escuro);
+
+  grid-area: aside;
+}
+
+.rodape{
+  background-color: var(--verde-forte);
+
+  grid-area: rodape;
+}
