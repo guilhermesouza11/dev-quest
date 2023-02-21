@@ -1,0 +1,23 @@
+body{
+  display: grid;
+  background: url('../src/images/bg-desktop.svg');
+  grid-template-areas: 
+    "header header"
+    "about about"
+    "footer footer";
+}
+
+.header{
+  grid-area: header;
+  background-color: aqua;
+}
+
+.about{
+  grid-area: about;
+  background-color: brown;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: chocolate;
+}
