@@ -1,23 +1,82 @@
-body{
+html {
+  background: #674BAF;
+}
+
+body {
   display: grid;
   background: url('../src/images/bg-desktop.svg');
-  grid-template-areas: 
-    "header header"
-    "about about"
-    "footer footer";
+  background-size: cover;
+  grid-template-areas:
+    'header header'
+    'about about'
+    'footer footer';
+  grid-template-columns: repeat(2, 1fr);
+  font-family: 'Open Sans', sans-serif;
 }
 
-.header{
+.header {
   grid-area: header;
-  background-color: aqua;
 }
 
-.about{
+.header .header-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 70px;
+}
+
+.header .header-container img {
+  min-width: 150px;
+}
+
+.about {
   grid-area: about;
-  background-color: brown;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: 30px 70px;
+  max-width: 1920px;
 }
 
-.footer{
+.about .about-img img{
+  width: 100%;
+}
+
+.about .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin: 30px 70px;
+  /* min-width: 350px; */
+}
+
+.about .about-info h1 {
+  font-size: 32px;
+  line-height: 45px;
+  height: auto;
+}
+
+.about .about-info p {
+  margin: 30px 0;
+  max-width: 500px;
+  line-height: 30px;
+}
+
+.about .about-info .btn-register{
+  background: #FFF;
+  color: #674BAF;
+  padding: 15px 25px;
+  /* border-radius: 2px; */
+}
+
+@media (max-width: 768px){
+  .about{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.footer {
   grid-area: footer;
   background-color: chocolate;
 }
