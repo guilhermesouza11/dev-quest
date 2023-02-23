@@ -2,6 +2,9 @@ html {
   background: #674BAF;
 }
 
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
 body {
   display: grid;
   background: url('../src/images/bg-desktop.svg');
@@ -28,7 +31,86 @@ body {
   min-width: 150px;
 }
 
-.about {
+.about{
+  grid-area: about;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  height: 89vh;
+
+  max-width: 1920px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 30px 70px;
+}
+
+.about .about-img img{
+  width: 100%;
+}
+
+.about .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+  margin: 30px 70px;
+}
+
+.about .about-info h1{
+  font-size: 40px;
+  max-width: 500px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .about-info p{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.about .about-info button{
+  background: #FFF;
+  color: #674BAF;
+  border: none;
+  border-radius: 100px;
+  padding: 20px 30px;
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+
+  transition: 0.2s;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about .about-info button:hover{
+  background: #E980E7;
+  color: #FFF;
+}
+
+
+@media (max-width: 768px){
+
+  .about{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto, 1fr);
+    padding: auto;
+  }
+  .about .about-img{
+    padding: 0;
+  }
+
+  .about .about-img img{
+    width: auto;
+  }
+
+  .about .about-info{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* .about {
   grid-area: about;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -47,7 +129,6 @@ body {
   justify-content: center;
   color: #fff;
   margin: 30px 70px;
-  /* min-width: 350px; */
 }
 
 .about .about-info h1 {
@@ -66,17 +147,28 @@ body {
   background: #FFF;
   color: #674BAF;
   padding: 15px 25px;
-  /* border-radius: 2px; */
-}
+} */
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
   .about{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
-}
+} */
 
 .footer {
   grid-area: footer;
-  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E980E7
+}
+
+@media (max-width: 768px){
+
+  .about{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
 }
