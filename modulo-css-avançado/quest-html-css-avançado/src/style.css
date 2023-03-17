@@ -24,27 +24,35 @@ body {
 .header .header-container {
   display: flex;
   justify-content: flex-start;
-  margin: 30px 70px;
+  min-height: 100px;
+  padding: 50px 100px;
 }
 
+<<<<<<< HEAD
 .header .header-container img {
   max-width: 200px;
+=======
+.header .header-container .logo{
+  width: 200px;
+}
+
+@media (max-width: 1024px){
+  .header .header-container{
+    padding: 25px 50px;
+  }
+
+  .header .header-container .logo{
+    width: 150px;
+  }
+>>>>>>> 6470294d450115eac2b3ef813c3abfed40109da5
 }
 
 .about{
   grid-area: about;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  /* height: 89vh; */
-
-  max-width: 1920px;
   font-family: 'Open Sans', sans-serif;
-  margin: 0 50px;
-}
-
-.about .about-img img{
-  width: 100%;
+  padding: 0 5%;
 }
 
 .about .about-info {
@@ -52,7 +60,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   color: #fff;
-  margin: 30px 70px;
+  padding: 5%;
 }
 
 .about .about-info h1{
@@ -66,7 +74,7 @@ body {
   margin: 30px 0;
 }
 
-.about .about-info button{
+.about .about-info a{
   background: #FFF;
   color: #674BAF;
   border: none;
@@ -82,13 +90,17 @@ body {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about .about-info button:hover{
+.about .about-info a:hover{
   background: #E980E7;
   color: #FFF;
 }
 
+<<<<<<< HEAD
 /* RESPONSIVIDADE ABOUT' */
 @media (max-width: 768px){
+=======
+@media (max-width: 1024px){
+>>>>>>> 6470294d450115eac2b3ef813c3abfed40109da5
 
   .about{
     grid-template-columns: 1fr;
@@ -96,6 +108,13 @@ body {
     
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about .about-info{
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -106,6 +125,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+<<<<<<< HEAD
   
   padding: 15px;
   background: transparent;
@@ -128,10 +148,33 @@ body {
 
 /* RESPONSIVIDADE FOOTER */
 @media (max-width: 768px){
+=======
+
+  padding: 0 5%;
+}
+
+.footer a{
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  padding: 15px 15px;
+  margin: 50px 15px;
+  text-align: center;
+}
+
+.footer a i{
+  width: 20px;
+  height: 20px;
+  color: #FFF;
+}
+
+@media (max-width: 1024px){
+>>>>>>> 6470294d450115eac2b3ef813c3abfed40109da5
 
   .footer{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-  }
 
+    display: flex;
+    justify-content: center;
+  }
 }
