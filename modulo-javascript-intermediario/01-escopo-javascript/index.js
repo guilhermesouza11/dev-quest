@@ -35,9 +35,30 @@
 
 // Escopo de função
 // Uma função javascript define um escopo para váriaveis criadas com let, const e var.
+// logo, a variavel fica inacessível fora da função.
   function falar(){
     var mensagem = 'Olá Mundo!'
   }
 
   falar()
   console.log(mensagem)
+
+// Escopo Global
+// O escopo global é o escopo mais externo de todos, ficará aceesivel de qualquer outro escopo.
+// Um exemplo de escopo global é a tag <script></script> criada no arquivo HTML, quando se
+// cria uma variavel dentro da tag, ela fica acessivel de qualquer outro arquivo .js, desde que
+// esse arquivo esteja linkado no arquivo HTML.
+
+//Exemplo de arquivo HTML:
+  <html>
+  
+    <script src="index.js"></script>
+    
+    <script>
+      let ola = 'Ola mundo';
+    </script>
+  
+  </html>
+  
+  // Exemplo de arquivo JS:
+    console.log(ola);
