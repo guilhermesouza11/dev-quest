@@ -13,4 +13,11 @@ let imprimirAnoDeNascimento = anoDeNascimento => {
   console.log('Seu ano de nascimento é: ' + anoDeNascimento);
 }
 
-calculadoraAnoNascimento(24, 3, imprimirAnoDeNascimento)
+calculadoraAnoNascimento(25, 3, imprimirAnoDeNascimento)
+
+
+function dobrar(numero){
+  return numero * 2
+}
+
+console.log(dobrar(2))
