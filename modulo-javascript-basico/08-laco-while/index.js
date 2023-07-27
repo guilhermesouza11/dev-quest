@@ -2,7 +2,7 @@
 let a = 10;
 let b = 15;
 
-while(a < b){
+while(a <= b){
   console.log('incrementando a variável a ' + a)
   a++;
 }

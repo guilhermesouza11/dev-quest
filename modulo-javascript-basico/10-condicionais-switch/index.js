@@ -34,8 +34,10 @@ switch(avaliacao){
   case 3:
   case 4:
     console.log('Filme bom')
+    break
   case 5:
     console.log('Filme excelente')
+    break
   default:
     console.log('Nota inválida')
     break
