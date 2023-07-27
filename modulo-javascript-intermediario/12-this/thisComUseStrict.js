@@ -1,5 +1,7 @@
-'use strict'
+// Use Strict Proibe a mescla entre os escopos, assim não faz com que o 'this' ultrapasse os escopos de funções e metodos
+'use strict' 
 
+// This pode estar em escopos globais, funções ou até mesmo em escopos de metodos
 // console.log(this)
 // console.log(window)
 // console.log(window === this)
@@ -28,9 +30,12 @@
 
 let comida = {
     nome: 'Brócolis',
-    temperatura: 0
+    temperatura: 0,
 }
 
+// É criado o metodo 'cozinhar' para o objeto 'comida'
+// Esse metodo tem como função criar uma  propriedade dentro de 'comida', cujo o
+// valor da propriedade será 
 comida.cozinhar = function(temperaturaDeCozimento){
     this.temperatura = temperaturaDeCozimento;
 }
@@ -40,4 +45,3 @@ console.log(comida.temperatura)
 comida.cozinhar(100)
 
 console.log(comida.temperatura)
-

@@ -11,7 +11,7 @@
   var pais = 'Brasil';
 
 // Esse console.log(pais) irá imprimir "undefined", pois o içamento
-// entra em ação, elevando apenas a definição da váriavel e não a atribuição.
+// entra em ação, elevando apenas a definição da váriavel e não a atribuição/valor.
 
 // Um exemplo simples do que o içamento faz por trás dos panos:
 

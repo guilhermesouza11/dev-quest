@@ -1,3 +1,4 @@
+'use strict'
 // Array, utlizado para manipular lista de valores, podendo ser strigns, numeros e também
 // lista de vários objetos
 let frutas = ['uva', 'banana', 'melão']
@@ -11,8 +12,18 @@ let videoGame = {
 
 let videoGame2 = {
   nome: 'Playstation',
-  valor: 2000
+  valor: 2000,
+  compare: () =>{
+    if(this.valor != videoGame.valor){
+      console.log('Os Valores são diferentes!')
+    }else{
+      console.log('Os valores são iguais')
+    }
+  }
 }
+
+console.log('Valor do xbox: ' + videoGame.valor + ' Valor do playstation: ' + videoGame2.valor)
+videoGame2.compare();
 
 //Array que contem objetos
 let videoGames = [videoGame, videoGame2]
