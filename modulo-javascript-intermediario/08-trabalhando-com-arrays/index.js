@@ -40,7 +40,9 @@ frutas.unshift('Caqui')
 console.log('Metodo Unshift: ' + frutas)
 
 // Metodo indexOf, serve para buscar a posição/indice de cada elemento dentro do array!
-// Diferente dos outros metodos, o indexOf necessita de uma variavel para poder conseguir
+// Diferente dos outros metodos, o indexOf necessita de uma variavel para conseguir
 // apresentar o valor que lhe é atribuido quando declarado.
 let posicaoLaranja = frutas.indexOf('Laranja')
 console.log('Metodo IndexOf: ' + posicaoLaranja)
+
+console.log(posicaoLaranja)

@@ -5,7 +5,7 @@ let resultadoDaSoma = (numero1, numero2) => {
 
 console.log(resultadoDaSoma(25, 5))
 
-// Essa é uma Arrow function, que com apenas um parametro, teve ser tamanho simplificado.
+// Essa é uma Arrow function, que com apenas um parametro, teve seu tamanho simplificado.
 // Foram removidos os parenteses do unico parametro.
 let incentivarQuester = nomeQuester => {
   console.log("Parabens" + nomeQuester + "! Você conseguiu!")

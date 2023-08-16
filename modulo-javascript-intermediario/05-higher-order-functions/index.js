@@ -1,33 +1,19 @@
-// Higher Order Functions = Funções de ordem superior;
-// Funções que recebem outras funções como parametro, ou retornam outras funções,
-// isso no javascript é chamado de callback.
 
-const calculadoraAnoNascimento = function(idade, mesDeNascimento, imprimir){
-  const mesAtual = 3;
-  let anoDeNascimento = 2023 - idade;
-  if(mesDeNascimento > mesAtual) anoDeNascimento--;
-  imprimir(anoDeNascimento);
+//Verificação para saber se é maior de idade
+let calculoMaioridade = imprimirMaioridade => {
+  let anoNascimento = prompt("Informe aqui a seu ano de nascimento:")
+  imprimirMaioridade(anoNascimento);
 }
 
-let imprimirAnoDeNascimento = anoDeNascimento => {
-  console.log('Seu ano de nascimento é: ' + anoDeNascimento);
-}
-
-calculadoraAnoNascimento(25, 3, imprimirAnoDeNascimento)
-
-
-function multiplicar(multiplicador){ // Nessa linha é criada a função multiplicar que tem como parametro o "multiplicador"
-  return function(numero){ // Nessa é retornada uma função anonima com o parametro numero
-    return numero * multiplicador; //Retorno da multiplicação entre os parametros numero e o multiplicador
+let calculoDeDataERegra = anoNascimento =>{
+  let maiorDeIdade = 2023 - anoNascimento;
+  if(maiorDeIdade >= 18){
+    console.log("Você é maior de idade!");
+  }else{
+    console.log("Você não é maior de idade, saia do site agora!")
   }
 }
 
-let dobrar = multiplicar(2); // Essa variavel recebe como valor a função multiplicar, é nela que será passado o parametro "Multiplicador"
-let triplicar = multiplicar(3);
-let quadruplicar = multiplicar(4);
+calculoMaioridade(calculoDeDataERegra)
 
-console.log(dobrar(2)); // Console irá imprimir o valor que está dentro da função multiplicar, no caso a função anonima, logo a função anonima tem como parametro "Numero"
-console.log(triplicar(2));
-console.log(quadruplicar(2));
 
-console.log(dobrar); // O console imprime o valor da variável dobrar, logo o valor dessa váriavel é a função anonima que espera o parametro 'numero'
