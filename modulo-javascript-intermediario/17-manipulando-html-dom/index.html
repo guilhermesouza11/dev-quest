@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM</title>
+</head>
+<body>
+    <h1>Posts do Twitter</h1>
+    
+    <article class="post">
+        <p><strong>Guilherme Souza</strong> <span>@guilhermesouza11 - 5 min</span></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos! Asperiores provident non explicabo assumenda a. Magni quod possimus vel labore architecto. Vel, accusamus. Officiis minus accusantium at id ipsa.</p>
+        
+        <br>
+        
+        <div class="comentarios">
+            <h3>Comentários:</h3>
+            <input name="novo-comentario" type="text" placeholder="Digite seu comentário">
+            <button onclick="adicionarComentario()">Adicionar Comentário</button>
+            
+            <br>
+            <div id="novos-comentarios"></div>
+        </div>
+    </article>
+    <script src="index.js"></script>
+</body>
+</html>
